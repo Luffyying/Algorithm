@@ -13,7 +13,6 @@ function insert(arr){
         high = i-1
         while(low<=high){
             let mid = Math.floor((low+high)/2)
-            // console.log('mid:'+mid)
             if(arr[mid]>item){
                 high = mid-1
             }else{

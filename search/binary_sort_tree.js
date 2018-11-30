@@ -63,7 +63,12 @@ function del(BiTree *T){
 }
 
 
-//二叉链表、孩子兄弟链表、双亲孩子链表的存储
+// 孩子兄弟表示法
+typedef struct CSNode{
+    int data;
+    struct CSNode *firstchild,*rightsib;
+}CSNode,*CSTree
+
 
 
 
