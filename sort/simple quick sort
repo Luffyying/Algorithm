@@ -1,0 +1,17 @@
+function quick(arr){
+    if(arr.length>1){
+        let left = [],right = [],guard = arr[0]
+        for(let i=1;i<arr.length;i++){
+            let cur = arr[i]
+            if(cur<guard){
+                left.push(cur)
+            }else {
+                right.push(cur)
+            }
+        }
+        return [...new Set(quick(left)),guard,...new Set(quick(right))]
+    }
+    return arr
+}
+let a = [4,2,5,3,7,0,1,12,5,6,8]
+console.log(quick(a))
