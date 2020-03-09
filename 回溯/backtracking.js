@@ -44,3 +44,16 @@ function isOk(row,col){
 }
 //首先在第一行放第一个棋子,
 calculate(0)
+
+//#endregion
+//#endregion
+//#endregion
+//0-1背包问题
+/*从n个物品（重量不等）中选择几件放入一个背包中，不可超过背包最大的承重量W，在 */
+
+//排队结账的问题
+// for(let i=0;i<customers.length;i++){
+//     let item = customers[i]
+//     arr[arr.indexOf(Math.min(arr))]+=item
+// }
+// return Math.max(arr)
