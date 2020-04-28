@@ -57,3 +57,25 @@ calculate(0)
 //     arr[arr.indexOf(Math.min(arr))]+=item
 // }
 // return Math.max(arr)
+function Foo() {
+    getName = function () { alert (1); };
+    return this;
+    // 此处的this是window
+}
+Foo.getName = function () { alert (2);};
+Foo.prototype.getName = function () { alert (3);};
+var getName = function () { alert (4);};
+function getName() { alert (5);}
+ 
+//请写出以下输出结果：
+// getName();//window.getName()
+// Foo().getName();
+// getName();
+// new 返回一个实例
+new Foo.getName();//2 对象上没有的方法才去原型链上找
+new Foo().getName();//3 window.getName()
+new new Foo().getName();//3
+// 2 ，5，1，3，
+// 2,4,1,1,2,3,3
+// new 和调用方法的优先级
+new Foo()
