@@ -20,5 +20,5 @@ function searchInsert(nums,target){
             high = mid-1;
         }
     }
-    return left;
+    return -1;
 }
