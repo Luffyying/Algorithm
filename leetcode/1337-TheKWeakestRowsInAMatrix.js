@@ -23,7 +23,7 @@ const kWeakestRows = (mat, k) => {
       .slice(0, k)
       .map(item => item[1]);
   };
-  //二分优化
+  //二分优化  主要在于找1的个数
   const kWeakestRows = (mat, k) => {
     const m = mat.length;
     const n = mat[0].length;
