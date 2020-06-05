@@ -1,7 +1,7 @@
 /*
     折半插入排序(对直接插入排序的一种优化，插入的时候，采用折半查找的方法来插入)
     时间复杂度：O(n*n)
-
+    测试删除
 */
 function insert(arr){
     let l = arr.length
